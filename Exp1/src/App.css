@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* MAIN APP */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+/* THEMES */
+.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.light {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* TITLE */
+.title {
+  margin-bottom: 25px;
+}
+
+/* NAVBAR */
+.nav-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.nav-bar button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-bar button:hover {
+  opacity: 0.85;
+}
+
+/* CARD */
+.card {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* BUTTON */
+button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* DARK/LIGHT BUTTON COLORS */
+.dark button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.light button {
+  background-color: #1d4ed8;
+  color: white;
+}
