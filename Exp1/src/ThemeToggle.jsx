@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 export default function ThemeToggle({ dark, setDark }) {
-  // Sync the theme to the HTML element for CSS styling
+
   useEffect(() => {
     if (dark) {
       document.body.style.backgroundColor = "#333";

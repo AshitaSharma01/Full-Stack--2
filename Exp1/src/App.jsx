@@ -45,7 +45,6 @@ function App() {
         
         {view === "exp1" && <Counter />}
         {view === "exp2" && <Todo />}
-        {/* Pass the state and setter as props here */}
         {view === "exp3" && <ThemeToggle dark={dark} setDark={setDark} />}
         {view === "exp4" && <SimpleForm />}
       </div>
@@ -57,15 +56,13 @@ function App() {
   );
 }
 
-// --- STYLES ---
-
 const fullPageStyle = { 
   minHeight: "100vh",
   width: "100%",
   display: "flex", 
   flexDirection: "column", 
   alignItems: "center", 
-  justifyContent: "center", 
+  justifyContent: "flex-start", 
   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
   margin: 0,
   padding: "20px",

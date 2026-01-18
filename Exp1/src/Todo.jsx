@@ -15,7 +15,7 @@ function Todo() {
     setTasks(tasks.filter((_, i) => i !== index));
   };
 
-  // Allows user to press "Enter" to add a task
+
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       addTask();
@@ -65,8 +65,6 @@ function Todo() {
   );
 }
 
-// --- STYLES ---
-
 const inputGroupStyle = { 
   display: "flex", 
   gap: "8px", 
@@ -101,7 +99,7 @@ const headerStyle = {
 const listItemStyle = { 
   display: "flex", 
   justifyContent: "space-between", 
-  alignItems: "center",      // Aligns text and button vertically in the center
+  alignItems: "center",     
   padding: "12px 0", 
   borderBottom: "1px dashed #ddd" 
 };
@@ -109,14 +107,14 @@ const listItemStyle = {
 const textStyle = {
   textAlign: "left",
   paddingRight: "10px",
-  wordBreak: "break-word"    // Prevents long text from breaking layout
+  wordBreak: "break-word"    
 };
 
 const checkBtnStyle = { 
-  display: "flex",           // Flexbox to center the checkmark
+  display: "flex",          
   alignItems: "center", 
   justifyContent: "center", 
-  flexShrink: 0,             // Prevents circle from becoming an oval
+  flexShrink: 0,            
   color: "green", 
   backgroundColor: "white",
   border: "2px solid green", 
